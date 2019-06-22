@@ -1,0 +1,22 @@
+{
+  "name": "learn-webdriverio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^8.10.0",
+    "selenium-standalone": "^6.16.0"
+  },
+  "devDependencies": {
+    "wdio-chromedriver-service": "^5.0.2",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "webdriverio": "^4.14.4"
+  },
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "jaya21 <jaya.jhs21@gmail.com>",
+  "license": "ISC",
+  "description": ""
+}
