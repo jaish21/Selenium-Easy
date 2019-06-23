@@ -21,3 +21,9 @@ exports.buttonClick = function (text, selector = 'button') {
     }
   }
 };
+
+exports.saveScreenshot = function() {
+  const path = './screenshots';
+  const fileName =  browser.getUrl().replace('https://', '').slice(0, -1).replace('/', '-');
+  browser.saveScreenshot(`${path}/${fileName}-${Date.now()}.png`);
+};
