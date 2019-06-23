@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     docker:
+      working_directory: ~/learn-webdriverio
       - image: circleci/node:6.17.1
     steps:
       - checkout
