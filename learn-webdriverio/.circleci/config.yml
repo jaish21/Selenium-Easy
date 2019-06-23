@@ -1,7 +1,8 @@
 version: 2
-build:
-  docker:
-    - image: circleci/node:6.17.1
-  steps:
-    - checkout
-    - run: echo "Building your app"
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6.17.1
+    steps:
+      - checkout
+      - run: echo "Building your app"
