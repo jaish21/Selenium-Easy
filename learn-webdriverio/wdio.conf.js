@@ -44,7 +44,8 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome'
+        browserName: 'chrome',
+        excludeDriverLogs: ['bugreport', 'server']
     }],
     //
     // ===================
@@ -58,7 +59,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'command',
+    logLevel: 'result',
     //
     // Enables colors for log output.
     coloredLogs: true,
