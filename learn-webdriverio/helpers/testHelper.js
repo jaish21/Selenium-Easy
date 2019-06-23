@@ -9,4 +9,15 @@ exports.customScroll = function (selector, n = 0) {
    browser.execute((selector, n) => {
      document.querySelectorAll(selector)[n].scrollIntoView();
   }, selector, n);
-}
+};
+
+exports.buttonClick = function (text, selector = 'button') {
+  const buttons = $$(selector);
+
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i].getText() === text) {
+       buttons[i].click();
+       break;
+    }
+  }
+};
