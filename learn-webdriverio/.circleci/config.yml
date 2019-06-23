@@ -5,4 +5,5 @@ jobs:
       - image: circleci/node:6.17.1
     steps:
       - checkout
+      - run: git checkout master
       - run: echo "Building your app"
