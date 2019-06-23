@@ -15,3 +15,13 @@ exports.inputValue = function(selectorId, value) {
 
   assert.equal($(selector).getValue(), value);
 };
+
+exports.checkBox = function(selectorId, isSelected = false) {
+  const selector = `#${selectorId}`;
+  browser.waitForExist(selector);
+  browser.scroll(selector);
+
+  $(selector).click();
+
+  assert.equal($(selector).isSelected(), isSelected ? false : true);
+}
